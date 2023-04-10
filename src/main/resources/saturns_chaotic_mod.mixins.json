@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.mcreator.saturnschaoticmod.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+	"SaturnsChaoticModModRepairItemRecipeMixin"  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

@@ -1,0 +1,135 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2023-04-09 20:11:24
+Description: Exception ticking world
+
+java.lang.NoSuchMethodError: 'java.lang.Object net.minecraft.Util.m_137537_(java.util.function.Supplier)'
+	at com.abdelaziz.saturn.common.world.biome.SaturnTemperatureCache.lambda$static$1(SaturnTemperatureCache.java:8) ~[saturn-mc1.19.2-0.0.1.jar%23183!/:0.0.1] {re:mixin,re:classloading}
+	at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305) ~[?:?] {}
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195) ~[?:?] {}
+	at java.lang.ThreadLocal.get(ThreadLocal.java:172) ~[?:?] {}
+	at net.minecraft.world.level.biome.Biome.getTemperature(Biome.java:118) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.warmEnoughToRain(Biome.java:165) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.shouldFreeze(Biome.java:138) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.shouldFreeze(Biome.java:134) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.tickChunk(ServerLevel.java:416) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:360) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:310) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:285) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.abdelaziz.saturn.common.world.biome.SaturnTemperatureCache.lambda$static$1(SaturnTemperatureCache.java:8) ~[saturn-mc1.19.2-0.0.1.jar%23183!/:0.0.1] {re:mixin,re:classloading}
+	at java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305) ~[?:?] {}
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195) ~[?:?] {}
+	at java.lang.ThreadLocal.get(ThreadLocal.java:172) ~[?:?] {}
+	at net.minecraft.world.level.biome.Biome.getTemperature(Biome.java:118) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.warmEnoughToRain(Biome.java:165) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.shouldFreeze(Biome.java:138) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.world.level.biome.Biome.shouldFreeze(Biome.java:134) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:biome,re:classloading,pl:accesstransformer:B,xf:fml:forge:biome,pl:mixin:APP:saturn.mixins.json:world.biome.BiomeMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.tickChunk(ServerLevel.java:416) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:360) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:310) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:285) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/1, l='ServerLevel[New World]', x=-6.50, y=-60.00, z=-2.50]]
+	Chunk stats: 2209
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 44 game time, 44 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 164727 (now: false), thunder time: 148245 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2.jar%23185!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1019655464 bytes (972 MiB) / 1935671296 bytes (1846 MiB) up to 4143972352 bytes (3952 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Athlon(tm) X4 950 Quad Core Processor      
+	Identifier: AuthenticAMD Family 21 Model 101 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 3.49
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: Parsec Virtual Display Adapter
+	Graphics card #0 vendor: Parsec Cloud, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=0.41.0.0
+	Graphics card #1 name: Radeon RX550/550 Series
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 2048.00
+	Graphics card #1 deviceId: 0x699f
+	Graphics card #1 versionInfo: DriverVersion=31.0.14043.1000
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Virtual memory max (MB): 23228.61
+	Virtual memory used (MB): 19065.06
+	Swap memory total (MB): 7424.00
+	Swap memory used (MB): 1478.77
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/1, l='ServerLevel[New World]', x=-6.50, y=-60.00, z=-2.50]]
+	Data Packs: vanilla, mod:saturns_chaotic_mod, mod:forge, mod:saturn (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.2.0_mapped_official_1.19.2.jar    |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		saturn-mc1.19.2-0.0.1.jar                         |Saturn                        |saturn                        |0.0.1               |DONE      |Manifest: NOSIGNATURE
+		main                                              |Saturn's Mod Idea Dump        |saturns_chaotic_mod           |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |43.2.0              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: a770b10b-2267-43d0-8354-e0d755957180
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.0

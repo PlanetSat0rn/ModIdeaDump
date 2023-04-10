@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "saturns_chaotic_mod:block/war_terminal"
+    },
+    "facing=east": {
+      "model": "saturns_chaotic_mod:block/war_terminal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "saturns_chaotic_mod:block/war_terminal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "saturns_chaotic_mod:block/war_terminal",
+      "y": 270
+    }
+  }
+}

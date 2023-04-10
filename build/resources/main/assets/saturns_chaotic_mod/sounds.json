@@ -1,0 +1,42 @@
+{
+  "blast": {
+    "category": "neutral",
+    "subtitle": "subtitles.blast",
+    "sounds": [
+      {
+        "name": "saturns_chaotic_mod:blast",
+        "stream": false
+      }
+    ]
+  },
+  "terminal_break": {
+    "category": "block",
+    "subtitle": "subtitles.terminal_break",
+    "sounds": [
+      {
+        "name": "saturns_chaotic_mod:break",
+        "stream": false
+      }
+    ]
+  },
+  "warmusic": {
+    "category": "player",
+    "subtitle": "subtitles.warmusic",
+    "sounds": [
+      {
+        "name": "saturns_chaotic_mod:pizza-tower-ost-thousand-march",
+        "stream": false
+      }
+    ]
+  },
+  "warmusicalt": {
+    "category": "player",
+    "subtitle": "subtitles.warmusicalt",
+    "sounds": [
+      {
+        "name": "saturns_chaotic_mod:sucrose",
+        "stream": false
+      }
+    ]
+  }
+}

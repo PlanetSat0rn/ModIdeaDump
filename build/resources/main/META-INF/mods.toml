@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="saturns_chaotic_mod"
+version="1.0.0"
+displayName="Saturn's Mod Idea Dump"
+credits="Pizza Tower - Inspired me to recreate War"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="PlanetSat0rn"
+description='''
+A Mod Where I Dump My Mod Ideas
+'''
+
+[[dependencies.saturns_chaotic_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

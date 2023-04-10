@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<VAR:Timer>",
+            "name": "PanicValue"
+          },
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spr_wartimer_0.png",
+          "use1Xscale": true,
+          "x": 134,
+          "y": 168
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PanicDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 16,
+      "sy": 16,
+      "ox": 10,
+      "oy": 24,
+      "snapOnGrid": true
+    }
+  }
+}

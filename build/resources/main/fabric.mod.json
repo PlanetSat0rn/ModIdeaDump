@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "saturns_chaotic_mod",
+  "version": "1.0.0",
+  "name": "Saturn's Chaotic Mod",
+  "authors": [
+    "PlanetSat0rn"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.saturnschaoticmod.SaturnsChaoticModMod"
+    ],
+    "client": [
+      "net.mcreator.saturnschaoticmod.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "mixins": [
+    "saturns_chaotic_mod.mixins.json"
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "mod_elements": [
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/item/BulletItem.java",
+          "src/main/resources/assets/saturns_chaotic_mod/models/item/bullet.json"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "Shotgun",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/item/ShotgunItem.java",
+          "src/main/resources/assets/saturns_chaotic_mod/models/item/shotgun.json",
+          "src/main/java/net/planetsaturn/saturnschaoticmod/entity/ShotgunEntity.java"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "WAR",
+      "type": "tab",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "war",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "PanicDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "panic_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/PanicDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "PanicValue",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "panic_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/PanicValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "Panic",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "panic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/client/screens/PanicOverlay.java"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "PanicStart",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "panic_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/PanicStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "TimerIncrease",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_increase",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/TimerIncreaseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "TimerCount",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_count",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/TimerCountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "ShotgunUse",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgun_use",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/saturns_chaotic_mod/advancements/shotgun_use.json"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "WARTerminal",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "war_terminal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/saturns_chaotic_mod/models/block/war_terminal.json",
+          "src/main/resources/assets/saturns_chaotic_mod/blockstates/war_terminal.json",
+          "src/main/resources/assets/saturns_chaotic_mod/models/item/war_terminal.json",
+          "src/main/java/net/planetsaturn/saturnschaoticmod/block/WARTerminalBlock.java"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "TimeControllerUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_controller_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/network/TimeControllerUIButtonMessage.java",
+          "src/main/java/net/planetsaturn/saturnschaoticmod/world/inventory/TimeControllerUIMenu.java",
+          "src/main/java/net/planetsaturn/saturnschaoticmod/client/gui/TimeControllerUIScreen.java"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "TimerIncreaseBlock",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_increase_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/TimerIncreaseBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "TimeIncreaseUI",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_increase_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/TimeIncreaseUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "TimeDecreaseUI",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_decrease_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/TimeDecreaseUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "SetTimeUI",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_time_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/SetTimeUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "ExplodeMe",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explode_me",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/ExplodeMeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "OpenTimeControllerUI",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_time_controller_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/procedures/OpenTimeControllerUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WAR/Complicated Procedure Shit"
+    },
+    {
+      "name": "TimeController",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/net/planetsaturn/saturnschaoticmod/command/TimeControllerCommand.java"
+        ]
+      },
+      "path": "~/WAR"
+    },
+    {
+      "name": "ChangeWarMusic",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "changeWarMusic",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Settings"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "panic",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "timer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "90.0"
+    },
+    {
+      "name": "looprunning",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "WARTickCounter",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "blast",
+      "files": [
+        "blast"
+      ],
+      "category": "neutral",
+      "subtitle": "plays when shotgun shoot"
+    },
+    {
+      "name": "terminal_break",
+      "files": [
+        "break"
+      ],
+      "category": "block",
+      "subtitle": "Plays when you break the War Terminal"
+    },
+    {
+      "name": "warmusic",
+      "files": [
+        "pizza-tower-ost-thousand-march"
+      ],
+      "category": "player",
+      "subtitle": "Plays when you pick up shotgun"
+    },
+    {
+      "name": "warmusicalt",
+      "files": [
+        "sucrose"
+      ],
+      "category": "player",
+      "subtitle": "Alternate War Music"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "itemGroup.saturns_chaotic_mod.war": "WAR",
+      "advancements.shotgun_use.descr": "Trigger the timer in the Shotgun",
+      "item.saturns_chaotic_mod.shotgun": "Shotgun",
+      "gui.saturns_chaotic_mod.time_controller_ui.button_set_time_to": "Set Time To",
+      "gui.saturns_chaotic_mod.panic.label_empty": "\u003cVAR:Timer\u003e",
+      "gamerule.changeWarMusic": "Change War Music",
+      "subtitles.blast": "plays when shotgun shoot",
+      "itemGroup.tabwar": "WAR",
+      "gui.saturns_chaotic_mod.time_controller_ui.button_increase_time_by_10": "Increase Time By 10",
+      "item.saturns_chaotic_mod.bullet": "Bullet",
+      "subtitles.warmusic": "Plays when you pick up shotgun",
+      "gamerule.changeWarMusic.description": "Changes It To Sugarcube Hailstorm",
+      "block.saturns_chaotic_mod.war_terminal": "WAR Terminal",
+      "gui.saturns_chaotic_mod.time_controller_ui.TimeInput": "Enter Number Here",
+      "gui.saturns_chaotic_mod.time_controller_ui.button_just_explode_me_already": "Just Explode Me Already",
+      "advancements.shotgun_use.title": "Time Is Ticking",
+      "subtitles.terminal_break": "Plays when you break the War Terminal",
+      "gui.saturns_chaotic_mod.time_controller_ui.button_decrease_time_by_10": "Decrease Time By 10",
+      "subtitles.warmusicalt": "Alternate War Music"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "WAR",
+        "children": [
+          {
+            "name": "Complicated Procedure Shit",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Settings",
+        "children": []
+      },
+      {
+        "name": "Other",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "saturns_chaotic_mod",
+    "modName": "Saturn\u0027s Mod Idea Dump",
+    "version": "1.0.0",
+    "description": "A Mod Where I Dump My Mod Ideas",
+    "author": "PlanetSat0rn",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "shotgun",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Pizza Tower - Inspired me to recreate War",
+    "modElementsPackage": "net.planetsaturn.saturnschaoticmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

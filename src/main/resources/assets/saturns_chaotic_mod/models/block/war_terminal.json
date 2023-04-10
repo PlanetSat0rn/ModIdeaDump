@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "saturns_chaotic_mod:blocks/warterminalnotfront",
+    "up": "saturns_chaotic_mod:blocks/warterminalnotfront",
+    "north": "saturns_chaotic_mod:blocks/spr_warterminal",
+    "east": "saturns_chaotic_mod:blocks/warterminalnotfront",
+    "south": "saturns_chaotic_mod:blocks/warterminalnotfront",
+    "west": "saturns_chaotic_mod:blocks/warterminalnotfront",
+    "particle": "saturns_chaotic_mod:blocks/warterminalnotfront"
+  },
+  "render_type": "solid"
+}

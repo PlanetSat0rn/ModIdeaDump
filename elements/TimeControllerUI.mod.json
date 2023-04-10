@@ -1,0 +1,89 @@
+{
+  "_fv": 39,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_decrease_time_by_10",
+          "text": "Decrease Time By 10",
+          "onClick": {
+            "name": "TimeDecreaseUI"
+          },
+          "width": 129,
+          "height": 20,
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_increase_time_by_10",
+          "text": "Increase Time By 10",
+          "onClick": {
+            "name": "TimeIncreaseUI"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_just_explode_me_already",
+          "text": "Just Explode Me Already",
+          "onClick": {
+            "name": "ExplodeMe"
+          },
+          "width": 145,
+          "height": 20,
+          "x": 141,
+          "y": 170
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Enter Number Here",
+          "name": "TimeInput",
+          "width": 120,
+          "height": 20,
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_set_time_to",
+          "text": "Set Time To",
+          "onClick": {
+            "name": "SetTimeUI"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 150,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

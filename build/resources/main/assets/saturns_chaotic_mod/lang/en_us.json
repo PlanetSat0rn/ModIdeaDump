@@ -1,0 +1,21 @@
+{
+  "itemGroup.saturns_chaotic_mod.war": "WAR",
+  "advancements.shotgun_use.descr": "Trigger the timer in the Shotgun",
+  "item.saturns_chaotic_mod.shotgun": "Shotgun",
+  "gui.saturns_chaotic_mod.time_controller_ui.button_set_time_to": "Set Time To",
+  "gui.saturns_chaotic_mod.panic.label_empty": "\u003cVAR:Timer\u003e",
+  "gamerule.changeWarMusic": "Change War Music",
+  "subtitles.blast": "plays when shotgun shoot",
+  "itemGroup.tabwar": "WAR",
+  "gui.saturns_chaotic_mod.time_controller_ui.button_increase_time_by_10": "Increase Time By 10",
+  "item.saturns_chaotic_mod.bullet": "Bullet",
+  "subtitles.warmusic": "Plays when you pick up shotgun",
+  "gamerule.changeWarMusic.description": "Changes It To Sugarcube Hailstorm",
+  "block.saturns_chaotic_mod.war_terminal": "WAR Terminal",
+  "gui.saturns_chaotic_mod.time_controller_ui.TimeInput": "Enter Number Here",
+  "gui.saturns_chaotic_mod.time_controller_ui.button_just_explode_me_already": "Just Explode Me Already",
+  "advancements.shotgun_use.title": "Time Is Ticking",
+  "subtitles.terminal_break": "Plays when you break the War Terminal",
+  "gui.saturns_chaotic_mod.time_controller_ui.button_decrease_time_by_10": "Decrease Time By 10",
+  "subtitles.warmusicalt": "Alternate War Music"
+}

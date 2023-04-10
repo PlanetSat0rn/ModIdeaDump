@@ -1,0 +1,33 @@
+{
+  "saturns_chaotic_mod:shotgun_use": {
+    "criteria": {
+      "shotgun_use": "2023-04-09 19:21:55 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blast_furnace": {
+    "criteria": {
+      "has_smooth_stone": "2023-04-09 19:06:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab": {
+    "criteria": {
+      "has_smooth_stone": "2023-04-09 19:06:34 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2023-04-09 19:05:38 -0500"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab_from_smooth_stone_stonecutting": {
+    "criteria": {
+      "has_smooth_stone": "2023-04-09 19:06:34 -0500"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

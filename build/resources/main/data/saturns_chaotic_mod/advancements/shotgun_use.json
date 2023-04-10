@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "saturns_chaotic_mod:textures/screens/spr_wartimer_0.png",
+    "icon": {
+      "item": "saturns_chaotic_mod:shotgun"
+    },
+    "title": {
+      "translate": "advancements.shotgun_use.title"
+    },
+    "description": {
+      "translate": "advancements.shotgun_use.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "shotgun_use": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
