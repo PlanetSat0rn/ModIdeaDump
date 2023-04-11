@@ -13,13 +13,13 @@ body:
       - label: "The suggestion is not already in the mod."
         required: true
 - type: input
-    attributes:
+  attributes:
       label: Suggestion Details
       description: The details of the Suggestion
     validations:
       required: true
 - type: input
-    attributes:
+  attributes:
       label: Reference
       description: Reference of the Suggestion if its inspired from somewhere else
     validations:
