@@ -5,7 +5,7 @@ labels: "[Suggestion]:"
 assignees: []
 
 body:
--type: checkboxes
+- type: checkboxes
 attributes:
       label: Is this suggestion already in the mod?
       description: Check the mods files or play the mod to see if its already added.
