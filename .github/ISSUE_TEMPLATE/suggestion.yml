@@ -12,7 +12,7 @@ body:
       options:
       - label: "The suggestion is not already in the mod."
         required: true
-- type: input
+- type: textarea
   attributes:
       id: details
       label: Suggestion Details
