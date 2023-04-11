@@ -2,8 +2,8 @@ name: Suggestion
 about: Add a suggestion
 title: "[Suggestion]:"
 labels: "[Suggestion]:"
-assignees: []
-
+assignees:
+ - PlanetSat0rn
 body:
 - type: checkboxes
 attributes:
