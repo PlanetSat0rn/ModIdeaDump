@@ -5,6 +5,9 @@ labels: "[Suggestion]:"
 assignees:
  - PlanetSat0rn
 body:
+- type: markup
+  attributes:
+      value: This form was hell to make
 - type: checkboxes
   attributes:
       label: Is this suggestion already in the mod?
