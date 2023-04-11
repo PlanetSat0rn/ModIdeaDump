@@ -1,0 +1,14 @@
+name: Suggestion
+about: Describe this issue template's purpose here.
+title: Suggestion
+labels: Suggestion
+assignees: PlanetSat0rn
+
+body:
+-type: checkboxes
+attributes:
+      label: Is this suggestion already in the mod?
+      description: Check the mods files or play the mod to see if its already added.
+      options:
+      - label: "The suggestion is not already in the mod."
+        required: true
