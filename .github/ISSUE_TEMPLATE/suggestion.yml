@@ -14,12 +14,14 @@ body:
         required: true
 - type: input
   attributes:
+      id: details
       label: Suggestion Details
       description: The details of the Suggestion
     validations:
       required: true
 - type: input
   attributes:
+      id: reference
       label: Reference
       description: Reference of the Suggestion if its inspired from somewhere else
     validations:
