@@ -17,12 +17,12 @@ body:
   attributes:
       label: Suggestion Details
       description: The details of the Suggestion
-     validations:
-     - required: true
+  validations:
+  - required: true
 - type: input
   id: reference
   attributes:
       label: Reference
       description: Reference of the Suggestion if its inspired from somewhere else
-     validations:
-     - required: false
+  validations:
+  - required: false
