@@ -13,15 +13,15 @@ body:
       - label: "The suggestion is not already in the mod."
         required: true
 - type: textarea
+  id: details
   attributes:
-      id: details
       label: Suggestion Details
       description: The details of the Suggestion
     validations:
       required: true
 - type: input
+  id: reference
   attributes:
-      id: reference
       label: Reference
       description: Reference of the Suggestion if its inspired from somewhere else
     validations:
