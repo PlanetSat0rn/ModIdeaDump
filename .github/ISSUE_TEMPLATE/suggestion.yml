@@ -13,7 +13,6 @@ body:
       - label: "The suggestion is not already in the mod."
         required: true
 - type: input
-
     attributes:
       label: Suggestion Details
       description: The details of the Suggestion
