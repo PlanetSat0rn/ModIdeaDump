@@ -5,7 +5,7 @@ labels: "[Suggestion]:"
 assignees:
  - PlanetSat0rn
 body:
-- type: markup
+- type: markdown
   attributes:
       value: This form was hell to make
 - type: checkboxes
